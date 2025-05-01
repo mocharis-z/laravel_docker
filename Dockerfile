@@ -12,6 +12,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 # Salin proyek Laravel ke dalam container
 COPY . /var/www/html
+COPY composer.json /var/www/html
 
 # Set folder kerja
 WORKDIR /var/www/html
